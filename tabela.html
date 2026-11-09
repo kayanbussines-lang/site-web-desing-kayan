@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produtos | StyleUp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/estilo.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark site-navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">STYLE<span>UP</span>.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="formulario.html">Cadastro</a></li>
+        <li class="nav-item"><a class="nav-link active" href="tabela.html">Produtos</a></li>
+        <li class="nav-item"><a class="btn btn-light btn-sm rounded-pill px-3 ms-lg-2" href="formulario.html">Cadastre-se <i class="bi bi-arrow-right"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="inner-page">
+  <section class="container py-5">
+    <div class="row align-items-end mb-4 g-3">
+      <div class="col-md-8">
+        <p class="eyebrow">CATÁLOGO STYLEUP</p>
+        <h1 class="section-title">Nossos produtos</h1>
+        <p class="text-secondary mb-0">Confira uma seleção de peças disponíveis em nossa loja.</p>
+      </div>
+      <div class="col-md-4">
+        <label for="buscaProduto" class="form-label visually-hidden">Buscar produto</label>
+        <div class="input-group">
+          <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+          <input type="search" id="buscaProduto" class="form-control" placeholder="Buscar produto...">
+        </div>
+      </div>
+    </div>
+
+    <div class="table-responsive shadow-sm rounded-4">
+      <table class="table table-hover align-middle mb-0" id="tabelaProdutos">
+        <thead>
+          <tr><th scope="col">Código</th><th scope="col">Produto</th><th scope="col">Categoria</th><th scope="col">Tamanho</th><th scope="col">Preço</th><th scope="col">Estoque</th><th scope="col">Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>SU001</td><td><div class="d-flex align-items-center gap-3"><img class="table-product-img" src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=160&q=80" alt=""><span class="fw-semibold">Camiseta Essential</span></div></td><td>Masculino</td><td>P ao GG</td><td>R$ 79,90</td><td>24</td><td><span class="badge text-bg-success">Disponível</span></td></tr>
+          <tr><td>SU002</td><td><div class="d-flex align-items-center gap-3"><img class="table-product-img" src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=160&q=80" alt=""><span class="fw-semibold">Jaqueta Urbana</span></div></td><td>Unissex</td><td>P ao GG</td><td>R$ 219,90</td><td>8</td><td><span class="badge text-bg-success">Disponível</span></td></tr>
+          <tr><td>SU003</td><td><div class="d-flex align-items-center gap-3"><img class="table-product-img" src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=160&q=80" alt=""><span class="fw-semibold">Calça Wide Leg</span></div></td><td>Feminino</td><td>36 ao 44</td><td>R$ 159,90</td><td>12</td><td><span class="badge text-bg-success">Disponível</span></td></tr>
+          <tr><td>SU004</td><td><div class="d-flex align-items-center gap-3"><img class="table-product-img" src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=160&q=80" alt=""><span class="fw-semibold">Camiseta Basic</span></div></td><td>Unissex</td><td>P ao GG</td><td>R$ 59,90</td><td>0</td><td><span class="badge text-bg-secondary">Esgotado</span></td></tr>
+          <tr><td>SU005</td><td><div class="d-flex align-items-center gap-3"><img class="table-product-img" src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=160&q=80" alt=""><span class="fw-semibold">Bolsa Minimal</span></div></td><td>Acessórios</td><td>Único</td><td>R$ 139,90</td><td>5</td><td><span class="badge text-bg-warning">Últimas peças</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p id="semResultados" class="text-secondary text-center py-4 d-none">Nenhum produto encontrado.</p>
+    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3 mt-4">
+      <span class="small text-secondary">* Preços e quantidades fictícios, utilizados apenas para demonstração acadêmica.</span>
+      <a href="formulario.html" class="btn btn-dark rounded-pill px-4">Quero me cadastrar <i class="bi bi-arrow-right ms-2"></i></a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer py-4"><div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2"><a class="navbar-brand fw-bold text-white" href="index.html">STYLE<span>UP</span>.</a><p class="mb-0 small text-white-50">© 2026 StyleUp. Projeto acadêmico.</p><a href="index.html" class="text-white small">Voltar ao início</a></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
